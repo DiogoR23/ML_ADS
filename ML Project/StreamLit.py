@@ -24,12 +24,11 @@ with open('MaritalEncoder.pkl', 'rb') as maritalEncoder_file:
 
 # Options for categorical features
 job_types = ['admin.', 'blue-collar', 'entrepreneur', 'housemaid', 'management', 
-             'retired', 'self-employed', 'services', 'student', 'technician', 'unemployed']
+             'retired', 'self-employed', 'services', 'student', 'technician', 'unemployed', 'unknown']
 
 marital_status = ['divorced', 'married', 'single']
 
-education_levels = ['basic.4y', 'basic.6y', 'basic.9y', 'high.school', 
-                    'illiterate', 'professional.course', 'university.degree', 'unknown']
+education_levels = ['primary', 'secondary', 'tertiary', 'unknown']
 
 # Defining the streamLit interface
 st.title("Forecast using Random Forest")
