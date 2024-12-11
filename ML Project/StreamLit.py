@@ -140,10 +140,10 @@ if submit_button:
     for col in expected_columns:
         if col not in bank.columns:
             bank[col] = 0
-    
+
     # Reordering the DataFrame to match the expected columns
     bank = bank[expected_columns]
-    
+
     # Selecting the best features
     bank_selected = select_features(bank)
 
@@ -153,5 +153,3 @@ if submit_button:
     # Showing the forecast
     st.subheader("Result")
     st.write("This client will subscribe a term deposit." if prediction[0] == 1 else "This client won't subscribe a term deposit.")
-
-
